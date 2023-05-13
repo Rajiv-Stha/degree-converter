@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='icon' type='image/png' href='./assets/conversionLogo.png'>
+    <title>Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="inputTagWrapper">
+
+                <div class="input_tag tags">
+                    <div class="tag_top">
+<p>From</p>
+                    </div>
+                    <div class="tag_bottom">
+
+                        <input placeholder="0.00" type="number" class="inputUser">
+                        <select value="celsius" name="from" class="Options">
+                            <option  value="choose">choose</option>
+                            <option value="celsius">
+                                celsius
+                            </option>
+                            <option value="Fahrenheit">
+                                Fahrenheit
+                            </option>
+                            <option value="kelvin">
+                                kelvin
+                            </option>
+                        </select>
+                    </div>
+                    
+                </div>
+                <div class="Output_Tag tags">
+
+                    <div class="tag_top">
+<p>To</p>
+                    </div>
+                    <div class="tag_bottom">
+
+                        <input  placeholder="0.00" type="number" class="resultInput">
+                        <select name="to" class="Options">
+                            <option   value="choose">choose</option>
+                        <option value="celsius">
+                            celsius
+                        </option>
+                        <option value="Fahrenheit">
+                            Fahrenheit
+                        </option>
+                        <option value="kelvin">
+                            kelvin
+                        </option>
+                    </select>
+                </div>
+                    
+                </div>
+                <button class="view_more_btn" >
+                    View More 
+
+                </button>
+                <div class="result_info">
+
+                    <div class="result_info_item">
+                        <p id="from_text">From This </p>
+                        <p id="from_result">_</p>
+                    </div>
+                    <div class="result_info_item">
+                        <p id="to_text">To That </p>
+                        <p id="to_result">_</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
